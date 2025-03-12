@@ -77,7 +77,7 @@ const Hero = () => {
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-br from-coach-100 to-coach-300/30 rounded-2xl blur-xl opacity-70 animate-pulse-slow"></div>
             <div className="relative aspect-[4/5] w-full max-w-md rounded-2xl overflow-hidden bg-muted">
-              <div className="absolute inset-0 bg-gradient-to-tr from-coach-600/10 to-coach-200/10"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-coach-600/20 to-coach-200/20"></div>
               <img 
                 src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                 alt="Executive coach portrait" 

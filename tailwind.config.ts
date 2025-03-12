@@ -54,17 +54,17 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				coach: {
-					50: '#f0f7ff',
-					100: '#e0effe',
-					200: '#bae0fe',
-					300: '#7cc5fc',
-					400: '#3aa7f8',
-					500: '#1a91ea',
-					600: '#0e72c8',
-					700: '#0f5aa1',
-					800: '#144b85',
-					900: '#16406f',
-					950: '#0f2a4b',
+					50: '#fff7ed',
+					100: '#ffedd5',
+					200: '#fed7aa',
+					300: '#fdba74',
+					400: '#fb923c',
+					500: '#f97316',
+					600: '#ea580c',
+					700: '#c2410c',
+					800: '#9a3412',
+					900: '#7c2d12',
+					950: '#431407',
 				}
 			},
 			borderRadius: {
@@ -124,3 +124,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+

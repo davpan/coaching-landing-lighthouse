@@ -35,7 +35,7 @@ const Navbar = () => {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-4 px-6 md:px-12',
         isScrolled 
-          ? 'bg-white/80 backdrop-blur-md shadow-sm' 
+          ? 'bg-background/90 backdrop-blur-md shadow-sm' 
           : 'bg-transparent'
       )}
     >
@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-md py-4 px-6 flex flex-col space-y-4 animate-fade-in">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-background shadow-md py-4 px-6 flex flex-col space-y-4 animate-fade-in">
           {navLinks.map((link) => (
             <Link
               key={link.path}
