@@ -2,7 +2,6 @@
 import { useEffect } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 
 const Contact = () => {
@@ -113,7 +112,6 @@ const Contact = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

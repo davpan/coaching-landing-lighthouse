@@ -1,7 +1,6 @@
 
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import TestimonialCard from '@/components/TestimonialCard';
 
 const Results = () => {
@@ -120,7 +119,6 @@ const Results = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

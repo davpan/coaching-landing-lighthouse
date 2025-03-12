@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import FAQ from '@/components/FAQ';
 
@@ -87,7 +86,6 @@ const Index = () => {
         
         <FAQ />
       </main>
-      <Footer />
     </>
   );
 };
