@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
@@ -48,25 +48,37 @@ const Navbar = () => {
         </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={cn(
-                'font-medium transition-all duration-200 relative px-1',
-                isActive(link.path) 
-                  ? 'text-primary' 
-                  : 'text-foreground/80 hover:text-foreground'
-              )}
-            >
-              {link.name}
-              {isActive(link.path) && (
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full transform origin-left animate-fade-in" />
-              )}
-            </Link>
-          ))}
-        </nav>
+        <div className="hidden md:flex items-center space-x-8">
+          <nav className="flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={cn(
+                  'font-medium transition-all duration-200 relative px-1',
+                  isActive(link.path) 
+                    ? 'text-primary' 
+                    : 'text-foreground/80 hover:text-foreground'
+                )}
+              >
+                {link.name}
+                {isActive(link.path) && (
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full transform origin-left animate-fade-in" />
+                )}
+              </Link>
+            ))}
+          </nav>
+          
+          <a 
+            href="https://linkedin.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-foreground/80 hover:text-primary transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={20} />
+          </a>
+        </div>
 
         {/* Mobile Menu Button */}
         <button 
@@ -95,6 +107,16 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          
+          <a 
+            href="https://linkedin.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="py-2 flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
+          >
+            <Linkedin size={20} />
+            <span>LinkedIn</span>
+          </a>
         </div>
       )}
     </header>
