@@ -1,6 +1,6 @@
 
 import { useState, useEffect, useRef } from 'react';
-import { Quote } from 'lucide-react';
+import { Quote, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface TestimonialCardProps {
@@ -13,7 +13,12 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ quote, name, title, company, delay = 0 }: TestimonialCardProps) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+  
+  const CHAR_LIMIT = 600;
+  const shouldTruncate = quote.length > CHAR_LIMIT;
+  const truncatedQuote = shouldTruncate ? `${quote.slice(0, CHAR_LIMIT)}...` : quote;
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -53,8 +58,23 @@ const TestimonialCard = ({ quote, name, title, company, delay = 0 }: Testimonial
     >
       <Quote size={24} className="text-primary mb-4" />
       <blockquote className="mb-6 text-foreground/90">
-        "{quote}"
+        "{isExpanded ? quote : truncatedQuote}"
       </blockquote>
+      {shouldTruncate && (
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors mb-4"
+        >
+          <span>{isExpanded ? 'Show Less' : 'Read More'}</span>
+          <ChevronDown 
+            size={16} 
+            className={cn(
+              "transition-transform duration-200",
+              isExpanded && "rotate-180"
+            )} 
+          />
+        </button>
+      )}
       <div>
         <p className="font-medium">{name}</p>
         <p className="text-sm text-muted-foreground">
