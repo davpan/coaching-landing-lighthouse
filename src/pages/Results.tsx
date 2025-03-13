@@ -84,25 +84,7 @@ const Results = () => {
               </p>
             </div>
             
-            {/* Statistics */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 animate-fade-in">
-              {[
-                { value: "94%", label: "of clients report significant improvement in leadership effectiveness" },
-                { value: "87%", label: "of clients achieve or exceed their primary coaching goals" },
-                { value: "3.5×", label: "average return on investment reported by client organizations" }
-              ].map((stat, index) => (
-                <div 
-                  key={index}
-                  className="bg-secondary p-6 rounded-lg text-center"
-                >
-                  <div className="text-3xl md:text-4xl font-semibold text-primary mb-2">
-                    {stat.value}
-                  </div>
-                  <p className="text-muted-foreground">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-            
+
             {/* Testimonials Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {testimonials.map((testimonial, index) => (
