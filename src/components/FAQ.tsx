@@ -7,28 +7,20 @@ interface FAQItem {
 const FAQ = () => {
   const faqs: FAQItem[] = [
     {
-      question: "What is executive coaching?",
-      answer: "Executive coaching is a personalized development process that helps leaders enhance their performance, decision-making skills, and overall effectiveness. Through one-on-one sessions, I work with you to identify strengths and areas for improvement, set meaningful goals, and develop actionable strategies to achieve them."
-    },
-    {
-      question: "How long is a typical coaching engagement?",
-      answer: "Most coaching relationships span 6-12 months, with sessions occurring every 2-3 weeks. However, I tailor the frequency and duration to your specific needs and goals. Some clients benefit from more intensive short-term coaching, while others prefer longer engagements with less frequent sessions."
+      question: "Who are your clients?",
+      answer: "My clients lead technology teams ranging from early stage startups to large orgs such as Airbnb, Twilio, and Grammarly. Often, they are at an inflection point in their career such as taking on a new role, experiencing rapid scaling, or supporting their company through a big change. It’s a privilege to partner with them to navigate important moments like this."
     },
     {
       question: "What happens during a coaching session?",
-      answer: "Each session is confidential and focused on your priorities. We typically start by reviewing progress on previous commitments, discussing current challenges, and exploring opportunities. Sessions include thought-provoking questions, feedback, and collaborative problem-solving. We conclude with clear action steps for between-session progress."
+      answer: "At the beginning of our engagement we will establish your goals. These goals might be for your personal development, challenges for our team, or broader issues your company is facing. In each subsequent session we'll pick an area or two to dive into together. Sessions include thought-provoking questions, feedback, and collaborative problem-solving. We'll aim to finish with clear decisions or actionable steps you can take by the next session."
     },
     {
       question: "How is success measured in coaching?",
-      answer: "Success is measured against the specific goals established at the beginning of our coaching relationship. This often includes both quantitative metrics (such as business outcomes or 360-degree feedback scores) and qualitative assessments (like improved relationships, enhanced decision-making, or greater leadership confidence). Regular progress reviews ensure we're on track."
+      answer: "Success is measured against the specific goals established at the beginning of our coaching relationship. This can include both quantitative metrics (such as business outcomes or 360-degree feedback scores) and qualitative assessments (like improved relationships or greater confidence with key decisions). We'll check in on these throughout the engagement to make sure we're on track."
     },
     {
-      question: "Is coaching confidential?",
-      answer: "Absolutely. Confidentiality is the foundation of an effective coaching relationship. All discussions, information shared, and coaching records remain strictly confidential. This creates a safe space for honest exploration and growth. The only exceptions would be those required by law or explicitly agreed upon in writing."
-    },
-    {
-      question: "How do I know if I'm ready for coaching?",
-      answer: "You're likely ready for coaching if you're open to feedback, willing to reflect honestly on your behaviors and mindsets, and committed to taking action for your development. The most successful coaching clients are those who approach the process with curiosity and a genuine desire for growth."
+      question: "How long is a typical coaching engagement?",
+      answer: "Engagements can span from 3 months to years. The frequency is tailored to your needs and can be changed down the road. There are no minimum commitments to how long we work together. We only continue as long as you’re getting high value from our partnership."
     }
   ];
 
@@ -36,9 +28,6 @@ const FAQ = () => {
     <section className="py-20 px-6 md:px-12 bg-secondary">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-sm font-medium text-primary uppercase tracking-wider">
-            Common Questions
-          </span>
           <h2 className="text-3xl md:text-4xl font-semibold mt-3 mb-4">
             Frequently Asked Questions
           </h2>

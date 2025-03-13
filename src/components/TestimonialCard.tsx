@@ -16,7 +16,7 @@ const TestimonialCard = ({ quote, name, title, company, delay = 0 }: Testimonial
   const [isExpanded, setIsExpanded] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
   
-  const CHAR_LIMIT = 600;
+  const CHAR_LIMIT = 500;
   const shouldTruncate = quote.length > CHAR_LIMIT;
   const truncatedQuote = shouldTruncate ? `${quote.slice(0, CHAR_LIMIT)}...` : quote;
   

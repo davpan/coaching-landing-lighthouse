@@ -70,7 +70,7 @@ const Navbar = () => {
           </nav>
           
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/davepan/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-foreground/80 hover:text-primary transition-colors"
