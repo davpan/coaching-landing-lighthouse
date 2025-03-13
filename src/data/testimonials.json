@@ -1,0 +1,64 @@
+{
+  "testimonials": [
+    {
+      "quote": "David is a world-class executive coach who excels at dissecting complex business challenges with clear, logical frameworks. As a thought partner, he leverages his extensive experience to provide insights grounded in real-world success. At the end of each session, I leave with confidence and clear next steps to tackle the highest priority challenges in my business.",
+      "name": "Helson Taveras",
+      "title": "Co-Founder & CTO",
+      "company": "Keep"
+    },
+    {
+      "quote": "As a first-time CTO and co-founder, I found David's coaching to be invaluable. His ability to draw from his extensive personal experience allowed him to provide tactical and strategic advice that directly addressed the challenges I faced in my role, while also helping me develop a framework for thinking through issues over time. David's supportive and collaborative coaching style created an environment where I could openly discuss the various challenges I encountered, ultimately equipping me with the skills and insights necessary to effectively lead my team and organization.",
+      "name": "Jamin Wong",
+      "title": "Co-Founder & CTO",
+      "company": "BoltWise"
+    },
+    {
+      "quote": "David has excellent experience as an engineering leader and manager at high-profile, successful companies, and can speak to the experience at the intersection of engineering and leadership in a way that few leaders can. My work with him has helped me feel more confident about executing against my most critical plans for the year.",
+      "name": "Emily Nakashima",
+      "title": "VP of Engineering",
+      "company": "Honeycomb"
+    },
+    {
+      "quote": "David and I began working together as I onboarded into an executive role. In the early weeks, David helped me prioritize my focus areas and build trust with my leadership team. Since then, David has provided inspiration as I lead the evolution of my organization, from designing effective strategy sessions to chart the course forward to developing compelling presentation formats to engage a worldwide workforce. David is always a great soundingboard; whenever I face a challenge, he helps me approach it clear-eyed and grounded.",
+      "name": "Darren Apfel",
+      "title": "GM / VP",
+      "company": "Twilio"
+    },
+    {
+      "quote": "David joined our team during a time of uncertainty when our engineering group needed a leader. His adeptness in handling challenging situations and his nuanced understanding of engineering leadership dynamics allowed us to navigate this period smoothly. His insights were instrumental in filling the leadership gap by helping us identify and hire a highly qualified VP of Engineering. David played a pivotal role in attracting the right talent to our team. One of the things I really appreciate about David's coaching style is how he's committed to promoting collaboration. His interactions with me and the team were all about enhancing collaboration between the product and engineering teams. I could always count on him as an unbiased thinking partner. With his guidance, I gained a deeper understanding of engineering processes and challenges, which significantly improved our communication and efficiency across different functions.",
+      "name": "Sumeet Howe",
+      "title": "VP of Product",
+      "company": "HOVER"
+    },
+    {
+      "quote": "Working with David is like having an unbiased thought partner, which is hard to come by as we take on more senior roles in our career. David's rich experience in tech leadership sets him apart from other coaches, it makes a world of difference talking to someone who has done it. Our topics range from driving an ambitious strategic effort, navigating tricky situations to getting more fulfillment from my job. Whatever the topic might be, he always listens actively and is able to understand a situation quickly. I appreciate his personalized approach, thoughtful questions and wise suggestions.",
+      "name": "Rachel Zhao",
+      "title": "Head of Engineering for Search Product",
+      "company": "Airbnb"
+    },
+    {
+      "quote": "Our company was going through an M&A process and we had multiple compelling offers. David came with a wealth of experience and provided a framework for helping us think through our options that ultimately helped us arrive at the correct decision.",
+      "name": "Ian Mendiola",
+      "title": "Co-Founder & CEO",
+      "company": "Super Abstractions (acq Google)"
+    },
+    {
+      "quote": "Working with David helped me to grow as a leader in many aspects. We have been cooperating throughout my transfer to a new role of managing managers at a larger scale. David always carefully listens, provides objective and thoughtful guidance, and brings just the right in-time questions to trigger non-biased discussions. David helped me a ton by sharing his perspectives, expertise and just bringing other aspects to various challenging situations in diverse areas: strategic thinking, people management, project execution, systematic scaling, and leading by example. I recommend David to anyone looking for leadership coaching!",
+      "name": "Anya Glukhova",
+      "title": "Engineering Manager",
+      "company": "Grammarly"
+    },
+    {
+      "quote": "David helped me navigate several important transitions on my path in engineering management. First, we worked on my skills of managing other managers. Moving from managing teams directly to managing via managers turned out to be a surprisingly non-trivial step for me. Second, David provided excellent support when I was going through a significant restructuring of our engineering organization. Most of my working circumstances changed: the set of the teams I manage, subject domains we build features for, working processes we use. Conversations with David are a reliable source of support and inspiration for me. And his war stories are truly amazing!",
+      "name": "Sasha Marinich",
+      "title": "Engineering Manager",
+      "company": "Grammarly"
+    },
+    {
+      "quote": "I started working with David when my career faced a turning point. After many years in engineering and several in management, I had three paths in front of me. I had to quickly learn as much as I could about all three and choose one to follow. David helped me both by having experience that covered all three choices, but also to help me better understand what I needed to ask myself in order to understand which choices might fit and which absolutely did not. This combination of introspection with examples of how others had experienced the questions I was considering helped me discover the right choice at this crux. Since then, David has continued to bring insight to the challenges as I walked the path he helped me find.",
+      "name": "Ben Hartshorne",
+      "title": "Engineering Manager",
+      "company": "Honeycomb"
+    }
+  ]
+}
