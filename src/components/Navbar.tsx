@@ -44,7 +44,7 @@ const Navbar = () => {
           to="/" 
           className="text-xl font-medium text-foreground transition-opacity hover:opacity-80"
         >
-          Executive Coaching
+          Dave Pan Coaching
         </Link>
         
         {/* Desktop Navigation */}

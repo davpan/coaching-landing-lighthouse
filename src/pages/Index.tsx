@@ -41,31 +41,27 @@ const Index = () => {
         <section className="py-20 px-6 md:px-12">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-sm font-medium text-primary uppercase tracking-wider animate-on-scroll">
-                Why Choose My Coaching
-              </span>
               <h2 className="text-3xl md:text-4xl font-semibold mt-3 mb-4 animate-on-scroll">
-                Transform Your Leadership
+                Why Choose My Coaching
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto animate-on-scroll">
-                My executive coaching approach is tailored to your unique challenges and goals,
-                providing the tools, insights, and accountability you need to excel.
+              I've been a leader and manager of technology teams for over 15 years. I was most recently the VP of Engineering at Mixpanel, where I helped scale the team by 4X and reach unicorn status. I've also built internet-scale products at Twitter, Amazon, and Microsoft.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Personalized Approach",
-                  description: "Coaching sessions tailored to your specific challenges, goals, and leadership style."
+                  title: "I’m dedicated to doing one thing",
+                  description: "I only work with technology leaders and collectively we’ve spent thousands of hours together. I’ll bring all that experience and my own 15 years in the industry to guide our conversations."
                 },
                 {
-                  title: "Actionable Insights",
-                  description: "Practical strategies and tools you can immediately apply to your professional life."
+                  title: "Every session is personalized",
+                  description: "You won’t find any workshops or playbooks. Instead, I’ll work with you to navigate the biggest challenges you face right now."
                 },
                 {
-                  title: "Measurable Results",
-                  description: "Clear metrics and feedback mechanisms to track your progress and growth."
+                  title: "Empathy and honesty",
+                  description: "I know your job is hard. I also know that seeking the truth is the only way to achieve your goals and find personal growth."
                 }
               ].map((benefit, index) => (
                 <div 

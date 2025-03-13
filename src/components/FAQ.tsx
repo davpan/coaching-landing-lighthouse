@@ -1,16 +1,10 @@
 
-import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
-import { cn } from '@/lib/utils';
-
 interface FAQItem {
   question: string;
   answer: string;
 }
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
   const faqs: FAQItem[] = [
     {
       question: "What is executive coaching?",
@@ -38,10 +32,6 @@ const FAQ = () => {
     }
   ];
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
     <section className="py-20 px-6 md:px-12 bg-secondary">
       <div className="max-w-3xl mx-auto">
@@ -57,38 +47,15 @@ const FAQ = () => {
           </p>
         </div>
         
-        <div className="space-y-4">
+        <div className="space-y-8">
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className={cn(
-                "border rounded-lg overflow-hidden transition-all duration-300",
-                openIndex === index ? "border-coach-200" : "border-border"
-              )}
+              className="border border-border rounded-lg overflow-hidden"
             >
-              <button
-                className="w-full px-6 py-4 text-left flex justify-between items-center"
-                onClick={() => toggleFAQ(index)}
-                aria-expanded={openIndex === index}
-              >
-                <span className="font-medium">{faq.question}</span>
-                <ChevronDown 
-                  size={20} 
-                  className={cn(
-                    "text-muted-foreground transition-transform duration-300",
-                    openIndex === index ? "rotate-180 text-primary" : ""
-                  )} 
-                />
-              </button>
-              <div 
-                className={cn(
-                  "overflow-hidden transition-all duration-300",
-                  openIndex === index ? "max-h-96" : "max-h-0"
-                )}
-              >
-                <div className="px-6 pb-4 text-muted-foreground">
-                  {faq.answer}
-                </div>
+              <div className="px-6 py-4">
+                <h3 className="font-medium text-lg mb-3">{faq.question}</h3>
+                <p className="text-muted-foreground">{faq.answer}</p>
               </div>
             </div>
           ))}

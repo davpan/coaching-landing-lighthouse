@@ -21,19 +21,26 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
     try {
-      // In a real app, you would send the form data to your backend
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Show success toast
-      toast({
-        title: "Message sent successfully",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+      const response = await fetch('https://formspree.io/f/mdkeorgw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      
-      // Reset form
-      setFormData({ name: '', email: '', message: '' });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        
+        // Reset form
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
     } catch (error) {
       toast({
         title: "Something went wrong",
