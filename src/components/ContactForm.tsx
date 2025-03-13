@@ -57,7 +57,7 @@ const ContactForm = () => {
       <div>
         <label htmlFor="name" className="block text-sm font-medium mb-2 flex items-center gap-2">
           <User size={16} className="text-muted-foreground" />
-          <span>Your Name</span>
+          <span>Name</span>
         </label>
         <input
           type="text"
@@ -67,7 +67,7 @@ const ContactForm = () => {
           onChange={handleChange}
           required
           className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
-          placeholder="John Doe"
+          placeholder="Jane Doe"
         />
       </div>
 
@@ -84,7 +84,7 @@ const ContactForm = () => {
           onChange={handleChange}
           required
           className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
-          placeholder="john@example.com"
+          placeholder="you@example.com"
         />
       </div>
 
@@ -100,7 +100,7 @@ const ContactForm = () => {
           required
           rows={5}
           className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors resize-none"
-          placeholder="I'm interested in coaching sessions..."
+          placeholder="Tell me about yourself and why you're reaching out"
         />
       </div>
 
@@ -117,7 +117,7 @@ const ContactForm = () => {
         ) : (
           <>
             <Send size={18} />
-            <span>Send Message</span>
+            <span>Send</span>
           </>
         )}
       </button>

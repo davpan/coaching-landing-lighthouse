@@ -17,21 +17,19 @@ const Contact = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16 animate-fade-in">
               <span className="text-sm font-medium text-primary mb-3 uppercase tracking-wider">
-                Get in Touch
+                Lets Chat
               </span>
               <h1 className="text-4xl md:text-5xl font-semibold mb-6">
                 Start Your Coaching Journey
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Take the first step toward transforming your leadership. Reach out to discuss how we can 
-                work together to achieve your goals.
+              If you’re interested in working together or just have questions, please reach out. I’m happy to talk over email or setup a free consultation.
               </p>
             </div>
             
             <div className="max-w-2xl mx-auto animate-fade-in">
-              <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
               <p className="text-muted-foreground mb-8">
-                Fill out the form below and I'll get back to you.
+                Fill out the form below and I'll be in touch.
               </p>
               
               <ContactForm />
