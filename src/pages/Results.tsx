@@ -27,7 +27,7 @@ const Results = () => {
                 Results That Speak for Themselves
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Don't just take my word for it. Hear directly from leaders who have achieved remarkable outcomes through our coaching partnership.
+                Hear directly from leaders who have achieved remarkable outcomes through our coaching partnership.
               </p>
             </div>
             
