@@ -19,7 +19,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/coaching-landing-lighthouse">
+      <BrowserRouter basename={import.meta.env.DEV ? '' : '/coaching-landing-lighthouse'}>
         <div className="min-h-screen flex flex-col">
           <div className="flex-grow">
             <Routes>

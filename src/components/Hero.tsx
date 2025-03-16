@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '@/utils/assetPath';
 
 const Hero = () => {
   const imageRef = useRef<HTMLImageElement>(null);
@@ -48,7 +49,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative aspect-[4/5] w-full max-w-md rounded-2xl overflow-hidden bg-muted">
               <img 
-                src="/coaching-landing-lighthouse/headshot.png" 
+                src={getAssetPath('headshot.png')} 
                 alt="Dave Pan - Executive Coach for Technology Leaders" 
                 className="w-full h-full object-cover"
                 loading="eager"
