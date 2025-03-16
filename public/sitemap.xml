@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://davpan.github.io/coaching-landing-lighthouse/</loc>
+    <loc>https://davepan.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://davpan.github.io/coaching-landing-lighthouse/results</loc>
+    <loc>https://davepan.com/results</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://davpan.github.io/coaching-landing-lighthouse/contact</loc>
+    <loc>https://davepan.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
