@@ -7,6 +7,7 @@ import ContactForm from '@/components/ContactForm';
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    window.mixpanel.track("Page View", { page: "Contact" });
   }, []);
 
   return (

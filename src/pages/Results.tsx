@@ -7,6 +7,7 @@ import testimonialData from '@/data/testimonials.json';
 const Results = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    window.mixpanel.track("Page View", { page: "Results" });
   }, []);
 
   const testimonials = testimonialData.testimonials;
