@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /coaching-landing-lighthouse/
+Disallow: /coaching-landing-lighthouse/meet30/
+Disallow: /coaching-landing-lighthouse/meet60/
+Sitemap: https://davpan.github.io/coaching-landing-lighthouse/sitemap.xml
