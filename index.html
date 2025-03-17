@@ -48,8 +48,18 @@
       mixpanel.init("f379fd5ac1347012dd84fb1d64501ae1", {
         debug: true,
         track_pageview: false,
-        persistence: "localStorage"
+        persistence: "localStorage",
+        track_links_timeout: 1000,
+        referrer_override: document.referrer
       });
+      
+      // Track clicks from LinkedIn
+      if (document.referrer.includes('linkedin.com')) {
+        mixpanel.register({
+          'Initial Referrer': 'LinkedIn',
+          'Landing Page': window.location.pathname
+        });
+      }
     </script>
     <script type="module" crossorigin src="/assets/index-C81xWK1V.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BE4MufJu.css">
