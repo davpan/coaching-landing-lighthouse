@@ -10,10 +10,9 @@ const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     
-    // Track page view with referrer
+    // Track page view
     window.mixpanel.track("Page View", {
-      page: "Home",
-      referrer: document.referrer || "$direct"
+      page: "Home"
     });
     
     // Set up intersection observer for animation

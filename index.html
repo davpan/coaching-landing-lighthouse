@@ -43,21 +43,22 @@
       "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
     </script>
     
-    <!-- Initialize Mixpanel -->
+    <!-- Capture referrer early -->
     <script>
+      // Store referrer before it potentially gets lost
+      var originalReferrer = document.referrer;
+      
+      // Initialize Mixpanel
       mixpanel.init("f379fd5ac1347012dd84fb1d64501ae1", {
         debug: true,
         track_pageview: false,
-        persistence: "localStorage",
-        track_links_timeout: 1000,
-        referrer_override: document.referrer
+        persistence: "localStorage"
       });
-      
-      // Track clicks from LinkedIn
-      if (document.referrer.includes('linkedin.com')) {
+
+      // Set super properties that will be sent with all events
+      if (originalReferrer) {
         mixpanel.register({
-          'Initial Referrer': 'LinkedIn',
-          'Landing Page': window.location.pathname
+          "Initial Referrer": originalReferrer
         });
       }
     </script>
