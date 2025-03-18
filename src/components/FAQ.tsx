@@ -1,18 +1,21 @@
 
+import { Link } from 'react-router-dom';
+
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 }
 
 const FAQ = () => {
   const faqs: FAQItem[] = [
     {
       question: "Who are your clients?",
-      answer: "My clients lead technology teams ranging from early stage startups to large orgs such as Airbnb, Twilio, and Grammarly. Often, they are at an inflection point in their career such as taking on a new role, experiencing rapid scaling, or supporting their company through a big change. It’s a privilege to partner with them to navigate important moments like this."
+      answer: <>My clients lead technology teams ranging from early stage startups to large orgs such as Airbnb, Twilio, and Grammarly. Often, they are at an inflection point in their career such as taking on a new role, experiencing rapid scaling, or supporting their company through a big change. <Link to="/results" className="text-primary hover:underline">Here's what clients have to say</Link> about our work together.</>
     },
     {
       question: "What happens during a coaching session?",
-      answer: "At the beginning of our engagement we will establish your goals. These goals might be for your personal development, challenges for our team, or broader issues your company is facing. In each subsequent session we'll pick an area or two to dive into together. Sessions include thought-provoking questions, feedback, and collaborative problem-solving. We'll aim to finish with clear decisions or actionable steps you can take by the next session."
+      answer: <>At the beginning of our engagement we will establish your goals. These goals might be for your personal development, challenges for your team, or broader issues your company is facing. In each session we'll pick an area or two to dive into together. The exploration includes thought-provoking questions, feedback, and collaborative problem-solving. We'll aim to finish with clear decisions or actionable steps you can take by the next session. You can experience it for yourself by <Link to="/contact" className="text-primary hover:underline">setting up a consultation</Link>.</>
+
     },
     {
       question: "How is success measured in coaching?",
