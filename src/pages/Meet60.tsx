@@ -1,5 +1,6 @@
 import Cal, { getCalApi } from '@calcom/embed-react';
 import { useEffect } from 'react';
+import Navbar from '../components/Navbar';
 
 const Meet60 = () => {
   useEffect(() => {
@@ -18,7 +19,8 @@ const Meet60 = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto py-8">
+      <Navbar />
+      <div className="container mx-auto py-8 mt-16">
         <Cal
           namespace="60min"
           calLink="davepan/60min"
